@@ -6,11 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Домашнее задание">
     <meta name="author" content="Андрей Клименченко FE108">
-    <title>!</title>
-    <script src="./script.js"></script>
+    <title>HW JS</title>
+    <script defer src="./script.js"></script>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="drinks">
+            <div class="one">
+                <h1>Меню напитков</h1>
+            </div>
+            <div class="create_new_drink">
+                <input type="text" class="message" placeholder="название">
+                <input id="alco" type="checkbox" class="or" placeholder="alco?">
+                <label for="alco">Алкогольный?</label>
+                <input type="text" class="ingridient" placeholder="состав">
+                <button class="add">Добавить</button>
+            </div>
+            <div class="wrapper">
+                <input type="text" class="alco_name" placeholder="название">
+                <button class="delete_btn">удалить</button>
+                <button class="more">Подробнее</button>
+            </div>
+            <div>
+                <h3 class="title"></h3>
+                <p class="title_info"></p>
+                <p class="title_status"></p>
+            </div>
+        </div>
+    </div> 
 </body>
 </html>

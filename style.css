@@ -1,0 +1,101 @@
+body {
+    margin: 0px;
+    background: #FFF4ED;
+}
+
+button {
+    text-decoration: none;
+    display: inline-block;
+    width: 140px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 45px;
+    margin: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #524f4e;
+    background: white;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+}
+
+button:hover {
+    background: #2EE59D;
+    box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+    color: white;
+    transform: translateY(-7px);
+}
+
+.create_new_drink, .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    margin: 20px;
+    font-size: 16px;
+    padding: 10px;
+    display: block;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+input:focus {
+    outline: none;
+}
+
+label {
+    color: #999;
+    font-size: 18px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.one {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.one h1 {
+font-family: 'Righteous', cursive;
+position: relative;
+color: #3CA1D9; 
+display: inline-block;
+border-top: 2px solid;
+border-bottom: 2px solid;
+font-size: 3em;
+padding: 11px 60px;
+margin: 0; 
+line-height: 1;
+}
+
+.one h1:before, .one h1:after {
+content: ""; 
+position: absolute;
+top: 0;
+width: 30px;
+height: 100%;
+border-left: 2px solid;
+border-right: 2px solid;
+background: repeating-linear-gradient(180deg, transparent, transparent 2px, #3CA1D9 2px, #3CA1D9 4px);
+}
+
+.one h1:before {
+    left: 0;
+}
+
+.one h1:after {
+    right: 0;
+}
+
+@media (max-width: 420px) {
+    .one h1 {font-size: 2em;
+    }
+}
